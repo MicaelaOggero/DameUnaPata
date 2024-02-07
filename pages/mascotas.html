@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Mascotas</title>
+</head>
+<body class="body">
+    <div class="contenedor">
+        <!--------Header-------->
+        <nav class="navbar fixed-top header">
+            <div class="container-fluid">
+                <div class="header">
+                    <div class="contenedor-titulo">
+                        <img class="logo" src="../imagenes/logo.jpeg" alt="Logo de dame una pata ">
+                        <div class="titulo">Dame Una Pata</div>
+                    </div>
+                    <nav class="menu">
+                        <a href="iniciar-sesion.html">Iniciar sesión</a>
+                        <button class="navbar-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title titulo-menu" id="offcanvasNavbarLabel">Menú</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active subtitulos-menu" aria-current="page" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mascotas.html">Mascotas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+              </div>
+            </div>
+        </nav>
+        <!----------Mascotas------------>
+        <section class="contenedor-mascotas contenedor-mascotas-oficial">
+            <h3 class="subtitulo-mascotas">Ellos están en busca de un hogar</h3>
+            <div class="mascotas">
+                <div class="perfil">
+                    <div id="carouselExample1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/perrito1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/perrito2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                        </div>
+                        <div class="carousel-item">
+                                <img src="../imagenes/perrito3.jpg" class="d-block imgMascotas" alt="imagen 3 mascota">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h3 class="nombre">Nombre</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti voluptate illo incidunt assumenda nobis, quidem ratione. Perspiciatis explicabo illum, doloribus fuga ratione officiis commodi labore!</p>
+                    <button class="btnAdoptar btn btn-primary">Adoptar</button>
+                </div>
+                <div class="perfil">
+                    <div id="carouselExample2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/perrito1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/perrito2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                        </div>
+                        <div class="carousel-item">
+                                <img src="../imagenes/perrito3.jpg" class="d-block imgMascotas" alt="imagen 3 mascota">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h3 class="nombre">Nombre</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipfacilis autem mollitia nihil isicing elit. Non corrupti voluptate illo incidunt assumenda nobis, quidem facilis autem mollitia nihil ratione. Perspiciatis explicabo illum, doloribus fuga ratione officiis commodi labore!</p>
+                    <button class="btnAdoptar btn btn-primary">Adoptar</button>
+                </div>           
+                <div class="perfil">
+                    <div id="carouselExample3" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imagenes/perrito1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/perrito2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                    </div>
+                    <div class="carousel-item">
+                            <img src="../imagenes/perrito3.jpg" class="d-block imgMascotas" alt="imagen 3 mascota">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                    <h3 class="nombre">Nombre</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti voluptate illo incidunt assumenda nobis, quidem facilis autem mollitia nihil ratione. Perspiciatis explicabo illum, doloribus fuga ratione officiis commodi labore!</p>
+                    <button class="btnAdoptar btn btn-primary">Adoptar</button>
+                </div>
+            </div>
+        </section>
+        <!--------Testimonios--------->
+        <section class="contenedor-testimonios margen-testimonio">
+            <div class="testimonios ">
+                <h2 class="titulo-testimonio">¿Qué dice la comunidad?</h2>
+                <div class="contenedor-mensajes">
+                    <div class="mensaje destacado-testimonio">
+                        <img class="foto" src="../imagenes/usuario1.png" alt="Foto 1">
+                        <div class="submensaje">
+                            <div class="nombre-testimonio"><label>Nombre</label></div>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sed. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mensaje destacado-testimonio">
+                        <img class="foto" src="../imagenes/usuario2.png" alt="Foto 1">
+                        <div class="submensaje">
+                            <div class="nombre-testimonio"><label>Nombre</label></div>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sed. 
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!------- Secciones------>
+        <section class="contenedor-secciones">
+            <div class="secciones">
+                <a class="seccion destacado" href="">
+                    <img src="../imagenes/icono-donar.png" alt="icono donar" width="100px">
+                    <div class="subseccion">
+                        <div class="titulo-seccion">
+                        <label>Donar</label>
+                        </div>
+                        <div class="subtitulo-seccion"><label>Contribuye con la causa</label></div>
+                    </div>
+                </a>
+                <a class="seccion destacado" href="">
+                    <img src="../imagenes/icono-voluntario.png" alt="icono voluntariado" width="100px">
+                    <div class="subseccion">
+                        <div class="titulo-seccion">
+                        <label>Voluntariado</label>
+                        </div>
+                        <div class="subtitulo-seccion"><label>Ayudanos a ayudar</label></div>
+                    </div>
+                </a>
+                <a class="seccion destacado" href="">
+                    <img src="../imagenes/icono-hogar-transitorio.png" alt="icono hogar transitorio" width="100px">
+                    <div class="subseccion">
+                        <div class="titulo-seccion">
+                        <label>Hogar transitorio</label>
+                        </div>
+                        <div class="subtitulo-seccion"><label>Comparti tu hogar</label></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!------- Footer --------->
+        <footer class="contenedor-footer">
+            <div class="footer">
+                <nav class="redes">
+                    <div class="informacion">
+                        <img class="icono-redes" src="../imagenes/icono-facebook.png" alt="icono facebook">
+                        <a class="sub-redes" href="">Facebook</a>
+                    </div>
+                    <div class="informacion">
+                        <img class="icono-redes" src="../imagenes/icono-instagram.png" alt="icono instagram">
+                        <a class="sub-redes" href="">Instagram</a>
+                    </div>
+                </nav>
+                <div class="subcripcion">
+                    <label>Recibe noticias acerca de las mascotas</label>
+                    <div>
+                        <input class="margen" type="email" id="email" name="email" required placeholder="usuario@gmail.com">
+                        <button class="btn btn-primary">Subcribirme</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

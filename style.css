@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit&display=swap');
+
+:root{
+    --fuente-subtitulos: 'Josefin Sans', sans-serif; 
+    --tamaño-subtitulos: 60px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    
+    color: black;
+    background-color: #dfe6e9;
+
+}
+
+
+button{
+    
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1f);
+    grid-template-rows: repeat(5, auto);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+
+    grid-template-areas: 
+    'header header'
+    'bienvenida bienvenida'
+    'mascotas testimonios'
+    'secciones secciones'
+    'footer footer';
+    
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 460px) {
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .parrafo{
+        display: none;
+       
+    }
+
+    div.titulo-inicio-sesion{
+        font-size: 50px;
+        
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        'header'
+        'bienvenida'
+        'mascotas'
+        'testimonios'
+        'secciones'
+        'footer'
+        ;
+    }
+
+    .secciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mascotas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .titulo{
+        display: none;
+    }
+
+
+    section.contenedor-testimonios.margen-testimonio {
+        margin: 10px;
+    }
+
+    
+}
+
+.contenedor section{
+    background-color: lightpink;
+}
+
+/*-------------------Header---------------*/
+
+.titulo-menu{
+    font-size: 30px;
+    font-family: var(--fuente-subtitulos);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #333;
+}
+
+.navbar-menu{
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.navbar-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+
+.contenedor-titulo{
+    display: flex;
+    align-items: end;
+}
+
+.titulo{
+    
+    font-size: 60px;
+    margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    
+}
+
+/*-----------------------Termina Header -----------------------*/
+
+/*----------------------- Bienvenida -----------------------*/
+.contenedor .contenedor-bienvenida{
+    grid-area: bienvenida;
+    padding-top: 115px;
+}
+
+.contenedor-bienvenida img{
+    width: 100%; /* Ajusta según tus necesidades */
+    position: relative;
+    display: inline-block;
+    
+}
+
+.subcontenedor-bienvenida {
+    background-color: rgba(255, 255, 255, 0.4); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);text-align: center;
+    padding: 20px 0;
+    width: 700px;
+    
+}
+
+
+.titulo-bienvenida{
+    font-size: var(--tamaño-subtitulos);
+    font-family: var(--fuente-subtitulos);
+    margin-top: 10px;
+    
+}
+
+
+/*----------------- Termina Bienvenida ----------------*/
+
+/*------------ Mascotas ---------*/
+
+.contenedor .contenedor-mascotas{
+    grid-area: mascotas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.contenedor .contenedor-mascotas-oficial{
+    margin-top: 125px;
+}
+
+.mascotas{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.subtitulo-mascotas{
+    font-size: 35px;
+    margin: 10px;
+    text-align: center;
+}
+
+.nombre{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: var(--fuente-subtitulos);
+}
+
+.btnAdoptar{
+    margin-top: 15px;
+
+}
+
+.perfil{
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+    
+}
+
+.imgMascotas{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*-------------- Termina Mascotas -----------*/
+
+/*-------------- Testimonios -----------*/
+
+.contenedor .contenedor-testimonios{
+    grid-area: testimonios;
+    display: flex;
+    padding: 0 20px;
+    
+}
+
+.margen-testimonio{
+    margin: 125px 10px 10px 0;
+}
+
+.titulo-testimonio{
+    font-size: 25px;
+}
+
+.testimonios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.contenedor-mensajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 15px 0; 
+}
+
+.mensaje {
+    border-radius: 8px;
+    background-color: lightslategray;
+    padding: 5px 15px;
+    margin: 5px 5px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.foto {
+    width: 30%; 
+    margin-right: 15px;
+}
+
+.nombre-testimonio{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    
+}
+
+.texto{
+    font-size: 15px;
+}
+
+.destacado-testimonio {
+    background: linear-gradient(to bottom, #9e9c9c, #d0d0d0); /* Degradado de fondo */
+    /* o */
+    background-color: #d0d0d088; /* Color de fondo */
+    
+}
+
+/*--------------- Termina Testimonios -----------*/
+
+/*----------------- Secciones ----------*/
+.contenedor .contenedor-secciones{
+    grid-area: secciones;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.secciones{
+    display: flex;
+    margin: 25px 10px;
+}
+
+.seccion{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.subseccion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.titulo-seccion{
+    color: black;
+    font-family: var(--fuente-subtitulos);
+    font-size: 30px;
+    margin-bottom: 5px;
+    
+}
+
+.subtitulo-seccion{
+    color: black;
+}
+
+.destacado {
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+}
+  
+.destacado:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/*--------------- Termina Secciones ----------*/
+
+/*-------------- Footer --------------*/
+.contenedor .contenedor-footer{
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    margin-top: auto;
+    padding: 1em 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-redes{
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    padding: 0;
+    
+}
+
+.icono-redes{
+    width: 25px;
+    margin-right: 10px;
+    
+}
+
+.subcripcion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+
+
+.informacion{
+    display: flex;
+    align-items: center;
+    
+}
+/*------------------- Termina Footer -------------------*/
+
+/*-----------------------Contacto----------------------*/
+
+.contenedor-contacto{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 120px auto auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    margin: 20px 10px;
+}
+
+.form-contacto{
+    width: 90%;
+}
+
+
+.contenedor-btnEnviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-contacto{
+    font-size: var(--tamaño-subtitulos);
+    font-family: var(--fuente-subtitulos);
+    margin-bottom: 30px;
+}
+
+.margen{
+    margin: 10px 0px;
+}
+
+.contenedor-informacion{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 10px;
+}
+
+.informacion{
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.icono{
+    margin-right: 5px;
+}
+/*--------------Termina contacto----------------------*/
+
+/*-------------Inicio sesion-------------------------*/
+
+
+.contenedor-inicio-sesion{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 120px auto auto auto;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.datos-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    margin: 20px 10px;
+}
+
+.form-inicio-sesion{
+    width: 80%;
+}
+
+.titulo-inicio-sesion{
+    font-size: var(--tamaño-subtitulos);
+    font-family: var(--fuente-subtitulos);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.registrate{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedor-btnInicio-sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    
+}
+
+/*----------------Termina inicio sesion-------------*/

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Iniciar sesión</title>
+</head>
+<body class="body">
+    <div class="contenedor">
+        <!--------Header-------->
+        <nav class="navbar fixed-top header">
+            <div class="container-fluid">
+                <div class="header">
+                    <div class="contenedor-titulo">
+                        <img class="logo" src="../imagenes/logo.jpeg" alt="Logo de dame una pata ">
+                        <div class="titulo">Dame Una Pata</div>
+                    </div>
+                    <nav class="menu">
+                        <a href="iniciar-sesion.html">Iniciar sesión</a>
+                        <button class="navbar-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title titulo-menu" id="offcanvasNavbarLabel">Menú</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active subtitulos-menu" aria-current="page" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mascotas.html">Mascotas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+              </div>
+            </div>
+        </nav>
+        <!------------Iniciar sesión---------->
+        <section class="contenedor-inicio-sesion col-12">
+            <div class="datos-inicio conteiner">
+                <div class="row">
+                    <div class="titulo-inicio-sesion">Iniciar sesión</div>
+                </div>
+                <form action="" class="row form-inicio-sesion">
+                    <div class="margen col-12">
+                        <label class="form-label" for="nombre">Corro electrónico</label>
+                        <input class="form-control" type="email" maxlength="20">
+                    </div>               
+                    <div class="margen col-12">
+                        <label class="form-label">Contraseña</label><br>
+                        <input class="form-control" type="password">
+                        <a href="">¿Olvidaste la contraseña?</a>
+                    </div>
+                    <div class="contenedor-btnInicio-sesion">
+                        <button class="btn btn-primary">Iniciar sesión</button>
+                    </div>  
+                </form>
+                <div class="registrate">
+                    <label>¿Es tu primera vez?</label>
+                    <a href="registrarse.html">Regístrate</a>
+                </div>
+            </div>
+        </section>
+        <!------- Secciones------>
+        <section class="contenedor-secciones">
+            <div class="secciones">
+                <a class="seccion destacado" href="">
+                    <img src="../imagenes/icono-donar.png" alt="icono donar" width="100px">
+                    <div class="subseccion">
+                        <div class="titulo-seccion">
+                        <label>Donar</label>
+                        </div>
+                        <div class="subtitulo-seccion"><label>Contribuye con la causa</label></div>
+                    </div>
+                </a>
+                <a class="seccion destacado" href="">
+                    <img src="../imagenes/icono-voluntario.png" alt="icono voluntariado" width="100px">
+                    <div class="subseccion">
+                        <div class="titulo-seccion">
+                        <label>Voluntariado</label>
+                        </div>
+                        <div class="subtitulo-seccion"><label>Ayudanos a ayudar</label></div>
+                    </div>
+                </a>
+                <a class="seccion destacado" href="">
+                    <img src="../imagenes/icono-hogar-transitorio.png" alt="icono hogar transitorio" width="100px">
+                    <div class="subseccion">
+                        <div class="titulo-seccion">
+                        <label>Hogar transitorio</label>
+                        </div>
+                        <div class="subtitulo-seccion"><label>Comparti tu hogar</label></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!------- Footer --------->
+        <footer class="contenedor-footer">
+            <div class="footer">
+                <nav class="redes">
+                    <div class="informacion">
+                        <img class="icono-redes" src="../imagenes/icono-facebook.png" alt="icono facebook">
+                        <a class="sub-redes" href="">Facebook</a>
+                    </div>
+                    <div class="informacion">
+                        <img class="icono-redes" src="../imagenes/icono-instagram.png" alt="icono instagram">
+                        <a class="sub-redes" href="">Instagram</a>
+                    </div>
+                </nav>
+                <div class="subcripcion">
+                    <label>Recibe noticias acerca de las mascotas</label>
+                    <div>
+                        <input type="email" id="email" name="email" required placeholder="usuario@gmail.com">
+                        <button class="btn btn-primary">Subcribirme</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
