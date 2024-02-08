@@ -68,6 +68,10 @@ button:hover{
         
     }
 
+    h2.titulo-nosotros{
+        font-size: 40px;
+    }
+
     
 }
 
@@ -111,9 +115,9 @@ button:hover{
     
 }
 
-.contenedor section{
+/* .contenedor section{
     background-color: lightpink;
-}
+} */
 
 /*-------------------Header---------------*/
 
@@ -241,7 +245,6 @@ nav a{
 
 .subtitulo-mascotas{
     font-size: 35px;
-    margin: 10px;
     text-align: center;
 }
 
@@ -275,6 +278,11 @@ nav a{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+.titulo-mascotas{
+    font-family: var(--fuente-subtitulos);
+    font-size: var(--tamaño-subtitulos);
 }
 
 /*-------------- Termina Mascotas -----------*/
@@ -606,3 +614,34 @@ nav a{
 }
 
 /*--------------------Termina Registro-----------------------------*/
+
+/*---------------------------Nosotros-------------------*/
+
+.contenedor-nosotros{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 125px auto auto auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.titulo-nosotros{
+    font-family: var(--fuente-subtitulos);
+    font-size: var(--tamaño-subtitulos);
+    
+}
+
+.subtitulos{
+    margin: 10px 0;
+    font-family: var(--fuente-subtitulos);
+}
+
+.nosotros{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
