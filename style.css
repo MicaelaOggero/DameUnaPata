@@ -24,10 +24,7 @@ button{
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #3498db;
-    color: #fff;
-    font-family: 'Kanit', sans-serif;
-    font-size: 15px;
+    
 }
 
 button:hover{
@@ -70,6 +67,8 @@ button:hover{
         font-size: 50px;
         
     }
+
+    
 }
 
 @media screen and (max-width: 880px) {
@@ -482,6 +481,7 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
 .titulo-contacto{
@@ -564,3 +564,45 @@ nav a{
 }
 
 /*----------------Termina inicio sesion-------------*/
+
+/*--------------------Registro---------------*/
+
+.contenedor-registro{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 120px auto auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+.datos-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    margin: 20px 10px;
+}
+
+.titulo-registro{
+    font-size: var(--tamaño-subtitulos);
+    font-family: var(--fuente-subtitulos);
+}
+
+.m-r{
+    margin-right: 10px;
+}
+
+.contenedor-btnRegistro{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--------------------Termina Registro-----------------------------*/
