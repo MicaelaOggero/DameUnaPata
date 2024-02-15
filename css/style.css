@@ -1,0 +1,326 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kanit&display=swap");
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #333;
+}
+.header .contenedor-titulo {
+  display: flex;
+  align-items: end;
+}
+.header .contenedor-titulo .logo {
+  width: 100px;
+  border-radius: 50%;
+}
+.header .contenedor-titulo .titulo {
+  font-size: 60px;
+  margin-left: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+@media screen and (max-width: 880px) {
+  .header .contenedor-titulo .titulo {
+    display: none;
+  }
+}
+.header .menu {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.header .menu .navbar-menu {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid white;
+}
+.header .menu .navbar-menu .navbar-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+}
+
+.contenedor .contenedor-bienvenida {
+  grid-area: bienvenida;
+  padding-top: 115px;
+}
+.contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item img {
+  width: 100%; /* Ajusta según tus necesidades */
+  position: relative;
+  display: inline-block;
+}
+.contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px 0;
+  width: 700px;
+}
+.contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10px;
+}
+
+.contenedor .contenedor-mascotas {
+  grid-area: mascotas;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.contenedor .contenedor-mascotas .titulo-mascotas {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+}
+.contenedor .contenedor-mascotas .subtitulo-mascotas {
+  font-size: 35px;
+  text-align: center;
+}
+.contenedor .contenedor-mascotas .mascotas {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 880px) {
+  .contenedor .contenedor-mascotas .mascotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.contenedor .contenedor-mascotas .mascotas .perfil {
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px;
+}
+.contenedor .contenedor-mascotas .mascotas .perfil .carousel .carousel-inner .carousel-item .imgMascotas {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.contenedor .contenedor-mascotas .mascotas .perfil .nombre {
+  font-size: 25px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: var(--fuente-subtitulos);
+}
+.contenedor .contenedor-mascotas .mascotas .perfil .btnAdoptar {
+  margin-top: 15px;
+}
+.contenedor .contenedor-mascotas-oficial {
+  margin-top: 125px;
+}
+
+.contenedor .contenedor-testimonios {
+  grid-area: testimonios;
+  display: flex;
+  padding: 0 20px;
+}
+.contenedor .contenedor-testimonios .testimonios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+}
+.contenedor .contenedor-testimonios .testimonios .titulo-testimonio {
+  font-size: 25px;
+  margin: 5px 0;
+}
+.contenedor .contenedor-testimonios .testimonios .contenedor-mensajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 15px 0;
+}
+.contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje {
+  border-radius: 8px;
+  background-color: lightslategray;
+  padding: 5px 15px;
+  margin: 5px 5px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje .foto {
+  width: 30%;
+  margin-right: 15px;
+}
+.contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje .submensaje .nombre-testimonio {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje .submensaje .texto {
+  font-size: 15px;
+}
+.contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .destacado-testimonio {
+  background: linear-gradient(to bottom, #9e9c9c, #d0d0d0);
+  background-color: rgba(208, 208, 208, 0.5333333333);
+}
+
+.contenedor .contenedor-secciones {
+  grid-area: secciones;
+  margin: 5px;
+  display: flex;
+}
+@media screen and (max-width: 880px) {
+  .contenedor .contenedor-secciones {
+    justify-content: center;
+  }
+}
+.contenedor .contenedor-secciones .secciones {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 880px) {
+  .contenedor .contenedor-secciones .secciones {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contenedor .contenedor-secciones .secciones .seccion {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin: 5px 20px;
+}
+.contenedor .contenedor-secciones .secciones .seccion .subseccion {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.contenedor .contenedor-secciones .secciones .seccion .subseccion .titulo-seccion {
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.contenedor .contenedor-secciones .secciones .seccion .subseccion .subtitulo-seccion {
+  color: black;
+}
+.contenedor .contenedor-secciones .secciones .destacado {
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+}
+.contenedor .contenedor-secciones .secciones .destacado:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.contenedor .contenedor-footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  margin-top: auto;
+  padding: 1em 0;
+}
+.contenedor .contenedor-footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 460px) {
+  .contenedor .contenedor-footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contenedor .contenedor-footer .footer .redes .informacion {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.contenedor .contenedor-footer .footer .redes .informacion .icono-redes {
+  width: 25px;
+  margin-right: 10px;
+}
+.contenedor .contenedor-footer .footer .redes .informacion .sub-redes {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  padding: 0;
+}
+.contenedor .contenedor-footer .footer .subcripcion {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  color: black;
+  background-color: #dfe6e9;
+}
+
+button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1f);
+  grid-template-rows: repeat(5, auto);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  grid-template-areas: "header header" "bienvenida bienvenida" "mascotas testimonios" "secciones secciones" "footer footer";
+}
+
+@media screen and (max-width: 880px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "bienvenida" "mascotas" "testimonios" "secciones" "footer";
+  }
+}
+.margen {
+  margin: 10px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

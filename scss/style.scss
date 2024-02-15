@@ -1,0 +1,69 @@
+@import 'componentes/header';
+@import 'componentes/bienvenida';
+@import 'componentes/mascotas';
+@import 'componentes/testimonios';
+@import 'componentes/secciones';
+@import 'componentes/footer';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    
+    color: black;
+    background-color: #dfe6e9;
+
+}
+
+
+button{
+    
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1f);
+    grid-template-rows: repeat(5, auto);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+
+    grid-template-areas: 
+    'header header'
+    'bienvenida bienvenida'
+    'mascotas testimonios'
+    'secciones secciones'
+    'footer footer';
+    
+}
+
+@media screen and (max-width: 880px) {
+
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        'header'
+        'bienvenida'
+        'mascotas'
+        'testimonios'
+        'secciones'
+        'footer'
+        ;
+    }
+
+}
+
+.margen{
+    margin: 10px 0px;
+}
