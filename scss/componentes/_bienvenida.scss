@@ -30,6 +30,12 @@
                             font-family: $fuente-subtitulos;
                             margin-top: 10px;
                         }
+
+                        .parrafo{
+                            @media screen and (max-width: 460px) {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }

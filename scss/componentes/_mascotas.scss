@@ -1,6 +1,6 @@
 @import '../base/variables';
 @import '../base/extensiones';
-
+@import '../base/mapas';
 .contenedor{
     .contenedor-mascotas{
         grid-area: mascotas;
@@ -56,7 +56,10 @@
 
                 .btnAdoptar{
                     margin-top: 15px;
-                
+                    background-color: map-get($map: $btn-general, $key: color);
+                    border: map-get($map: $btn-general, $key: border);
+                    padding: map-get($map: $btn-general, $key: padding);
+                    color: map-get($map: $btn-general, $key: texto);
                 }
             }
         }
