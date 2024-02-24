@@ -55,11 +55,12 @@ nav a {
   color: white;
   font-family: "Kanit", sans-serif;
   font-size: 20px;
+  text-align: end;
 }
 
 .contenedor .contenedor-bienvenida {
   grid-area: bienvenida;
-  padding-top: 115px;
+  margin-top: 115px;
 }
 .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item img {
   width: 100%; /* Ajusta según tus necesidades */
@@ -82,12 +83,21 @@ nav a {
   margin-top: 10px;
 }
 
+.contenedor-contacto .datos, .contenedor-inicio-sesion .datos-inicio, .contenedor .contenedor-mascotas .mascotas .perfil {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 10px;
+  margin: 20px 10px;
+}
+
 .contenedor .contenedor-mascotas {
   grid-area: mascotas;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
+  padding: 5px;
 }
 .contenedor .contenedor-mascotas .titulo-mascotas {
   font-family: "Josefin Sans", sans-serif;
@@ -98,28 +108,17 @@ nav a {
   text-align: center;
 }
 .contenedor .contenedor-mascotas .mascotas {
-  display: flex;
-  justify-content: space-evenly;
-}
-@media screen and (max-width: 880px) {
-  .contenedor .contenedor-mascotas .mascotas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .contenedor .contenedor-mascotas .mascotas .perfil {
-  width: 350px;
+  max-width: 350px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 10px 10px;
 }
 .contenedor .contenedor-mascotas .mascotas .perfil .carousel .carousel-inner .carousel-item .imgMascotas {
   width: 200px;
@@ -142,7 +141,9 @@ nav a {
 .contenedor .contenedor-testimonios {
   grid-area: testimonios;
   display: flex;
-  padding: 0 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .contenedor .contenedor-testimonios .testimonios {
   width: 100%;
@@ -188,11 +189,19 @@ nav a {
   background: linear-gradient(to bottom, #9e9c9c, #d0d0d0);
   background-color: rgba(208, 208, 208, 0.5333333333);
 }
+.contenedor .margen-testimonio {
+  margin-top: 125px;
+}
 
+@media screen and (max-width: 880px) {
+  section.contenedor-testimonios.margen-testimonio {
+    margin: 0;
+  }
+}
 .contenedor .contenedor-secciones {
   grid-area: secciones;
-  margin: 5px;
   display: flex;
+  background: url("../../imagenes/fondo-seccion.avif");
 }
 @media screen and (max-width: 880px) {
   .contenedor .contenedor-secciones {
@@ -201,8 +210,7 @@ nav a {
 }
 .contenedor .contenedor-secciones .secciones {
   display: flex;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin: 20px 0;
   width: 100%;
   justify-content: space-around;
 }
@@ -282,6 +290,127 @@ nav a {
   padding: 20px;
 }
 
+.contenedor-nosotros {
+  grid-column: 1/3;
+  margin: 125px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor-nosotros .titulo-nosotros {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+}
+@media screen and (max-width: 580px) {
+  .contenedor-nosotros .titulo-nosotros {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .contenedor-nosotros .titulo-nosotros {
+    font-size: 35px;
+  }
+}
+.contenedor-nosotros .nosotros {
+  margin: 0 10px;
+}
+.contenedor-nosotros .nosotros .subtitulos {
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contenedor-contacto .datos, .contenedor-inicio-sesion .datos-inicio, .contenedor .contenedor-mascotas .mascotas .perfil {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 10px;
+  margin: 20px 10px;
+}
+
+.contenedor-inicio-sesion {
+  grid-column: 1/3;
+  margin: 125px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-inicio-sesion .datos-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-inicio-sesion .datos-inicio .row .titulo-inicio-sesion {
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 460px) {
+  .contenedor-inicio-sesion .datos-inicio .row .titulo-inicio-sesion {
+    font-size: 45px;
+  }
+}
+.contenedor-inicio-sesion .datos-inicio .form-inicio-sesion {
+  width: 80%;
+}
+.contenedor-inicio-sesion .datos-inicio .form-inicio-sesion .contenedor-btnInicio-sesion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.contenedor-inicio-sesion .datos-inicio .registrate {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contenedor-contacto .datos, .contenedor .contenedor-mascotas .mascotas .perfil, .contenedor-inicio-sesion .datos-inicio {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 10px;
+  margin: 20px 10px;
+}
+
+.contenedor-contacto {
+  grid-column: 1/3;
+  margin: 125px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-contacto .datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 650px;
+}
+.contenedor-contacto .datos .titulo-contacto {
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 30px;
+}
+.contenedor-contacto .datos .form-contacto {
+  width: 90%;
+}
+.contenedor-contacto .datos .col-12 .contenedor-btnEnviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.contenedor-informacion {
+  grid-column: 1/3;
+  margin: 10px;
+}
+.contenedor-informacion .informacion {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+}
+.contenedor-informacion .informacion .icono {
+  margin-right: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -305,11 +434,11 @@ button:hover {
 .contenedor {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1f);
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(5, auto);
   font-family: "Arial", sans-serif;
   color: #333;
-  grid-template-areas: "header header" "bienvenida bienvenida" "mascotas testimonios" "secciones secciones" "footer footer";
+  grid-template-areas: "header header header" "bienvenida bienvenida bienvenida" "mascotas mascotas testimonios" "secciones secciones secciones" "footer footer footer";
 }
 
 @media screen and (max-width: 880px) {
@@ -321,6 +450,10 @@ button:hover {
 }
 .margen {
   margin: 10px 0px;
+}
+
+.contenedor section {
+  background-color: lightpink;
 }
 
 /*# sourceMappingURL=style.css.map */

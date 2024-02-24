@@ -2,7 +2,10 @@
     .contenedor-testimonios{
         grid-area: testimonios;
         display: flex;
-        padding: 0 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
         .testimonios{
 
             width: 100%;
@@ -62,5 +65,14 @@
                 }
             }
         }
+    }
+    .margen-testimonio{
+        margin-top: $margen-header;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    section.contenedor-testimonios.margen-testimonio {
+        margin: 0;
     }
 }

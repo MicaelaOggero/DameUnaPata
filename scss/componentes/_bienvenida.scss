@@ -4,7 +4,7 @@
     .contenedor-bienvenida{
 
         grid-area: bienvenida;
-        padding-top: 115px;
+        margin-top: 115px;
 
         .carousel{
             .carousel-inner{
@@ -20,7 +20,8 @@
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%,-50%);text-align: center;
+                        transform: translate(-50%,-50%);
+                        text-align: center;
                         padding: 20px 0;
                         width: 700px;
 

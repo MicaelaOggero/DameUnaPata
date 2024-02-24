@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/extensiones';
 
 .contenedor{
     .contenedor-mascotas{
@@ -6,7 +7,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 20px;
+        margin: 10px;
+        padding: 5px;
 
         .titulo-mascotas{
             font-family: $fuente-subtitulos;
@@ -20,29 +22,18 @@
         }
         
         .mascotas{
-            display: flex;
-            justify-content: space-evenly;
-
-            @media screen and (max-width: 880px) {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        
             .perfil{
-
-                width: 350px;
+                max-width: 350px;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 40px 20px;
-                background-color: #fff;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                margin: 10px 10px;
-                
+                @extend %bg-general;
 
                 .carousel{
                     .carousel-inner{
@@ -72,6 +63,6 @@
     }
 
     .contenedor-mascotas-oficial{
-        margin-top: 125px;
+        margin-top: $margen-header;
     }
 }

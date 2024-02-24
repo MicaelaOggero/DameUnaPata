@@ -4,6 +4,9 @@
 @import 'componentes/testimonios';
 @import 'componentes/secciones';
 @import 'componentes/footer';
+@import 'componentes/nosotros';
+@import 'componentes/iniciar-sesion';
+@import 'componentes/contacto';
 
 *{
     margin: 0;
@@ -33,17 +36,17 @@ button:hover{
 .contenedor{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1f);
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(5, auto);
     font-family: 'Arial', sans-serif;
     color: #333;
 
     grid-template-areas: 
-    'header header'
-    'bienvenida bienvenida'
-    'mascotas testimonios'
-    'secciones secciones'
-    'footer footer';
+    'header header header'
+    'bienvenida bienvenida bienvenida'
+    'mascotas mascotas testimonios'
+    'secciones secciones secciones'
+    'footer footer footer';
     
 }
 
@@ -67,3 +70,7 @@ button:hover{
 .margen{
     margin: 10px 0px;
 }
+
+.contenedor section{
+    background-color: lightpink;
+} 
