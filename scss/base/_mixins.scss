@@ -1,0 +1,4 @@
+@mixin insane ($tamano, $margen){
+    width: $tamano;
+    margin: $margen;
+}

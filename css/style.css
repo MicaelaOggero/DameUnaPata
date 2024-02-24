@@ -82,12 +82,17 @@ nav a {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 10px;
 }
+@media screen and (max-width: 460px) {
+  .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .parrafo {
+    display: none;
+  }
+}
 
 .contenedor-contacto .datos, .contenedor-inicio-sesion .datos-inicio, .contenedor .contenedor-mascotas .mascotas .perfil {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 50px 10px;
+  padding: 50px 20px;
   margin: 20px 10px;
 }
 
@@ -133,6 +138,9 @@ nav a {
 }
 .contenedor .contenedor-mascotas .mascotas .perfil .btnAdoptar {
   margin-top: 15px;
+  background-color: #0d6efd;
+  padding: 5px 10px;
+  color: #fff;
 }
 .contenedor .contenedor-mascotas-oficial {
   margin-top: 125px;
@@ -154,21 +162,21 @@ nav a {
 }
 .contenedor .contenedor-testimonios .testimonios .titulo-testimonio {
   font-size: 25px;
-  margin: 5px 0;
+  margin-bottom: 10px;
 }
 .contenedor .contenedor-testimonios .testimonios .contenedor-mensajes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: 15px 0;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje {
   border-radius: 8px;
   background-color: lightslategray;
   padding: 5px 15px;
-  margin: 5px 5px;
-  width: 300px;
+  padding-top: 20px;
+  margin: 5px;
+  max-width: 300px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -180,7 +188,6 @@ nav a {
 .contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje .submensaje .nombre-testimonio {
   font-size: 15px;
   font-weight: bold;
-  padding-bottom: 5px;
 }
 .contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .mensaje .submensaje .texto {
   font-size: 15px;
@@ -210,23 +217,28 @@ nav a {
 }
 .contenedor .contenedor-secciones .secciones {
   display: flex;
-  margin: 20px 0;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
+  margin: 20px 10px;
 }
 @media screen and (max-width: 880px) {
   .contenedor .contenedor-secciones .secciones {
-    width: auto;
-    display: flex;
     flex-direction: column;
+    place-items: center;
   }
 }
 .contenedor .contenedor-secciones .secciones .seccion {
+  max-width: 400px;
   display: flex;
   align-items: center;
   text-decoration: none;
   justify-content: center;
   margin: 5px 20px;
+}
+@media screen and (max-width: 1142px) {
+  .contenedor .contenedor-secciones .secciones .seccion {
+    max-width: 300px;
+  }
 }
 .contenedor .contenedor-secciones .secciones .seccion .subseccion {
   display: flex;
@@ -243,10 +255,10 @@ nav a {
   color: black;
 }
 .contenedor .contenedor-secciones .secciones .destacado {
-  transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+  transition: transform 0.4s ease-in-out; /* Agrega una transición suave */
 }
 .contenedor .contenedor-secciones .secciones .destacado:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+  transform: scale(1.3); /* Aumenta el tamaño al pasar el ratón */
 }
 
 .contenedor .contenedor-footer {
@@ -323,7 +335,7 @@ nav a {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 50px 10px;
+  padding: 50px 20px;
   margin: 20px 10px;
 }
 
@@ -337,6 +349,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 500px;
 }
 .contenedor-inicio-sesion .datos-inicio .row .titulo-inicio-sesion {
   font-size: 60px;
@@ -367,7 +380,7 @@ nav a {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 50px 10px;
+  padding: 50px 20px;
   margin: 20px 10px;
 }
 
@@ -400,6 +413,7 @@ nav a {
 
 .contenedor-informacion {
   grid-column: 1/3;
+  width: auto;
   margin: 10px;
 }
 .contenedor-informacion .informacion {
@@ -422,9 +436,7 @@ nav a {
 }
 
 button {
-  padding: 5px 15px;
-  border: none;
-  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 button:hover {
