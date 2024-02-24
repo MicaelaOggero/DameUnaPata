@@ -112,7 +112,14 @@ button:hover{
         margin: 10px;
     }
 
+    section.contenedor-secciones{
+        justify-content: center;
+    }
     
+    div.secciones{
+        width: auto;
+        align-items: flex-start;
+    }
 }
 
 /* .contenedor section{
@@ -360,16 +367,18 @@ nav a{
 /*----------------- Secciones ----------*/
 .contenedor .contenedor-secciones{
     grid-area: secciones;
-    margin: 10px;
+    margin: 5px;
     display: flex;
-    justify-content: center;
     align-content: center;
     
 }
 
 .secciones{
     display: flex;
-    margin: 25px 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .seccion{
@@ -377,14 +386,14 @@ nav a{
     align-items: center;
     text-decoration: none;
     justify-content: center;
-    margin: 0 20px;
+    margin: 5px 20px;
+    
 }
 
 .subseccion{
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px;
     
 }
 
@@ -645,3 +654,4 @@ nav a{
     margin-left: 10px;
     margin-right: 10px;
 }
+/*--------------------Termina nosotros----------------*/

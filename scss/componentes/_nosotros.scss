@@ -1,0 +1,30 @@
+.contenedor-nosotros{
+    grid-column: 1 / 3;
+    margin: $margen-header 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .titulo-nosotros{
+        font-family: $fuente-subtitulos;
+        font-size: $tamano-subtitulos;
+    
+        @media screen and (max-width: 580px) {
+            font-size: 50px;
+        }
+
+        @media screen and (max-width: 470px) {
+            font-size: 35px;
+        }
+
+    }
+
+    .nosotros{
+        margin: 0 10px;
+
+        .subtitulos{
+            margin: 10px 0;
+            font-family: $fuente-subtitulos;
+        }
+    }
+}

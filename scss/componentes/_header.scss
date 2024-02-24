@@ -1,0 +1,71 @@
+@import '../base/variables';
+
+// header
+
+.header{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #333;
+
+    .contenedor-titulo{
+
+        display: flex;
+        align-items: end;
+
+        .logo{
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .titulo{
+            font-size: 60px;
+            margin-left: 10px;
+            font-family: $fuente-subtitulos;
+            color: white;
+
+            @media screen and (max-width: 880px) {
+                display: none;
+            }
+        }
+    }
+
+    .menu{
+
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        .navbar-menu{
+
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid white;
+
+            .navbar-icon{
+
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                background-image: var(--bs-navbar-toggler-icon-bg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+
+            }
+        }
+    }
+}
+
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    text-align: end;
+}
+

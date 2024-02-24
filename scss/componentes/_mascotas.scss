@@ -1,0 +1,68 @@
+@import '../base/variables';
+@import '../base/extensiones';
+
+.contenedor{
+    .contenedor-mascotas{
+        grid-area: mascotas;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 5px;
+
+        .titulo-mascotas{
+            font-family: $fuente-subtitulos;
+            font-size: $tamano-subtitulos;
+        }
+
+        .subtitulo-mascotas{
+            font-size: 35px;
+            text-align: center;
+            
+        }
+        
+        .mascotas{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        
+            .perfil{
+                max-width: 350px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @extend %bg-general;
+
+                .carousel{
+                    .carousel-inner{
+                        .carousel-item{
+                            .imgMascotas{
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .nombre{
+                    font-size: 25px;
+                    margin: 10px;
+                    font-weight: bold;
+                    font-family: var(--fuente-subtitulos);
+                }
+
+                .btnAdoptar{
+                    margin-top: 15px;
+                
+                }
+            }
+        }
+    }
+
+    .contenedor-mascotas-oficial{
+        margin-top: $margen-header;
+    }
+}

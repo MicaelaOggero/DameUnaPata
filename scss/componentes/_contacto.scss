@@ -1,0 +1,50 @@
+@import '../base/extensiones';
+
+.contenedor-contacto{
+    grid-column: 1/3;
+    margin: $margen-header 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 650px;
+        @extend %bg-general;
+
+        .titulo-contacto{
+            font-size: $tamano-subtitulos;
+            font-family: $fuente-subtitulos;
+            margin-bottom: 30px;
+        }
+
+        .form-contacto{
+            width: 90%;
+        }
+
+        .col-12{
+            .contenedor-btnEnviar{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.contenedor-informacion{
+    grid-column: 1 / 3;
+    margin: 10px;
+
+    .informacion{
+        display: flex;
+        align-items: center;
+        margin: 10px 20px;
+
+        .icono{
+            margin-right: 10px;
+        }
+    }
+}

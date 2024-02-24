@@ -1,0 +1,61 @@
+.contenedor{
+    .contenedor-secciones{
+        grid-area: secciones;
+        display: flex;
+        background: url('../../imagenes/fondo-seccion.avif');
+        
+        @media screen and (max-width: 880px) {
+            justify-content: center;
+        }
+
+        .secciones{
+            
+            @media screen and (max-width: 880px) {
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            display: flex;
+            margin: 20px 0;
+            width: 100%;
+            justify-content: space-around;
+
+            .seccion{
+                
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                justify-content: center;
+                margin: 5px 20px;
+
+                .subseccion{
+
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 15px;
+
+                    .titulo-seccion{
+                        color: black;
+                        font-family: $fuente-subtitulos;
+                        font-size: 30px;
+                        margin-bottom: 5px;
+                    }
+
+                    .subtitulo-seccion{
+                        color: black;
+                    }
+                }
+            }
+
+            .destacado {
+                transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+            }
+
+            .destacado:hover {
+                transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+            }
+        }
+    }
+}
