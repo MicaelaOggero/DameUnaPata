@@ -1,4 +1,5 @@
 @import '../base/extensiones';
+@import '../base/mapas';
 
 .contenedor-inicio-sesion{
     grid-column: 1/3;
@@ -34,6 +35,13 @@
                 align-items: center;
                 padding-top: 40px;
                 
+                .btnAdoptar{
+                    margin-top: 15px;
+                    background-color: map-get($map: $btn-general, $key: color);
+                    padding: map-get($map: $btn-general, $key: padding);
+                    color: map-get($map: $btn-general, $key: texto);
+                    border: map-get($map: $btn-general, $key: border);
+                }
             }
         }
 

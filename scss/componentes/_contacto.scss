@@ -12,6 +12,7 @@
         align-items: center;
         width: 650px;
         @extend %bg-general;
+        
 
         .titulo-contacto{
             font-size: $tamano-subtitulos;
@@ -32,7 +33,15 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-top: 10px;
+                padding-top: 15px;
+
+                .btnAdoptar{
+                        
+                    background-color: map-get($map: $btn-general, $key: color);
+                    padding: map-get($map: $btn-general, $key: padding);
+                    color: map-get($map: $btn-general, $key: texto);
+                    border: map-get($map: $btn-general, $key: border);
+                }
             }
         }
     }

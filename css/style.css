@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
-  background-color: #333;
+  background-color: black;
 }
 .header .contenedor-titulo {
   display: flex;
@@ -89,7 +89,7 @@ nav a {
 }
 
 .contenedor-registro .datos-registro, .contenedor-contacto .datos, .contenedor-inicio-sesion .datos-inicio, .contenedor .contenedor-mascotas .mascotas .perfil {
-  background-color: #fff;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
@@ -101,8 +101,6 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-  padding: 5px;
 }
 .contenedor .contenedor-mascotas .titulo-mascotas {
   font-family: "Josefin Sans", sans-serif;
@@ -111,6 +109,7 @@ nav a {
 .contenedor .contenedor-mascotas .subtitulo-mascotas {
   font-size: 35px;
   text-align: center;
+  margin-top: 20px;
 }
 .contenedor .contenedor-mascotas .mascotas {
   width: 100%;
@@ -138,9 +137,16 @@ nav a {
 }
 .contenedor .contenedor-mascotas .mascotas .perfil .btnAdoptar {
   margin-top: 15px;
-  background-color: #0d6efd;
-  padding: 5px 10px;
-  color: #fff;
+  background-color: yellow;
+  padding: 10px 15px;
+  color: black;
+  border: none;
+}
+.contenedor .borde-esfumado-m {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+  background-size: 100% 10px; /* Altura y ancho del borde superior */
+  background-position: top; /* Posición del gradiente en la parte superior */
+  background-repeat: no-repeat; /* Evita la repetición del gradiente */
 }
 .contenedor .contenedor-mascotas-oficial {
   margin-top: 125px;
@@ -149,7 +155,6 @@ nav a {
 .contenedor .contenedor-testimonios {
   grid-area: testimonios;
   display: flex;
-  margin: 10px 10px 10px 0;
 }
 .contenedor .contenedor-testimonios .testimonios {
   width: 100%;
@@ -161,6 +166,7 @@ nav a {
 .contenedor .contenedor-testimonios .testimonios .titulo-testimonio {
   font-size: 25px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .contenedor .contenedor-testimonios .testimonios .contenedor-mensajes {
   width: 100%;
@@ -191,15 +197,23 @@ nav a {
   font-size: 15px;
 }
 .contenedor .contenedor-testimonios .testimonios .contenedor-mensajes .destacado-testimonio {
-  background: linear-gradient(to bottom, #9e9c9c, #d0d0d0);
-  background-color: rgba(208, 208, 208, 0.5333333333);
+  background: linear-gradient(to top, #ffee33, #fbff00);
+  background-color: #ffe100;
+  border: 1px solid yellow;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Desplazamiento X, desplazamiento Y, desenfoque, color */
 }
 .contenedor .margen-testimonio {
   margin-top: 125px;
 }
+.contenedor .borde-esfumado-t {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+  background-size: 100% 10px; /* Altura y ancho del borde superior */
+  background-position: top; /* Posición del gradiente en la parte superior */
+  background-repeat: no-repeat; /* Evita la repetición del gradiente */
+}
 @media screen and (max-width: 880px) {
-  .contenedor .m-r {
-    margin-left: 10px;
+  .contenedor .borde-esfumado-t {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), transparent);
   }
 }
 
@@ -212,7 +226,7 @@ nav a {
 .contenedor .contenedor-secciones {
   grid-area: secciones;
   display: flex;
-  background: url("../../imagenes/fondo-seccion.avif");
+  padding: 10px 0;
 }
 @media screen and (max-width: 880px) {
   .contenedor .contenedor-secciones {
@@ -262,12 +276,12 @@ nav a {
   transition: transform 0.4s ease-in-out; /* Agrega una transición suave */
 }
 .contenedor .contenedor-secciones .secciones .destacado:hover {
-  transform: scale(1.3); /* Aumenta el tamaño al pasar el ratón */
+  transform: scale(1.3);
 }
 
 .contenedor .contenedor-footer {
   grid-area: footer;
-  background-color: #333;
+  background-color: black;
   color: #fff;
   text-align: center;
   font-family: "Kanit", sans-serif;
@@ -305,38 +319,128 @@ nav a {
   flex-direction: column;
   padding: 20px;
 }
-
-.contenedor-nosotros {
-  grid-column: 1/3;
-  margin: 125px 10px 10px 10px;
+.contenedor .contenedor-footer .footer .subcripcion div {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
 }
-.contenedor-nosotros .titulo-nosotros {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 60px;
+.contenedor .contenedor-footer .footer .subcripcion div input {
+  margin-right: 5px;
 }
-@media screen and (max-width: 580px) {
-  .contenedor-nosotros .titulo-nosotros {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 470px) {
-  .contenedor-nosotros .titulo-nosotros {
-    font-size: 35px;
-  }
-}
-.contenedor-nosotros .nosotros {
-  margin: 0 10px;
-}
-.contenedor-nosotros .nosotros .subtitulos {
-  margin: 10px 0;
-  font-family: "Josefin Sans", sans-serif;
+.contenedor .contenedor-footer .footer .subcripcion div .btnAdoptar {
+  background-color: yellow;
+  padding: 10px 15px;
+  color: black;
+  border: none;
 }
 
+main {
+  grid-column: 1/3;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+main .seccion-nosotros {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+main .seccion-nosotros .subtitulos {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+}
+main .seccion-nosotros .contenido {
+  margin: 10px;
+  width: 80%;
+  text-align: center;
+}
+main .seccion-nosotros .conteiner-nosotros {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+main .seccion-nosotros .conteiner-nosotros .slide {
+  max-width: 500px;
+  overflow: hidden;
+}
+main .seccion-nosotros .conteiner-nosotros .slide ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+main .seccion-nosotros .conteiner-nosotros .slide ul li img {
+  width: 500px;
+}
+@media screen and (max-width: 500px) {
+  main .seccion-nosotros .conteiner-nosotros .slide ul li img {
+    width: 100vw;
+  }
+}
+main .seccion-nosotros .titulo-nosotros {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main .seccion-nosotros .titulo-nosotros {
+    font-size: 60px;
+  }
+}
+main .no-parallax {
+  background-color: #FFF44F;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 -5px 10px rgba(126, 126, 17, 0.455);
+}
+main .no-parallax-secciones {
+  z-index: 999;
+}
+main .parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+main .bg::after {
+  background: linear-gradient(rgba(121, 118, 118, 0.5), rgba(255, 252, 252, 0.508)), url("../../imagenes/fondo-huellitas.jpg");
+  background-size: cover;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+}
 .contenedor-registro .datos-registro, .contenedor-contacto .datos, .contenedor-inicio-sesion .datos-inicio, .contenedor .contenedor-mascotas .mascotas .perfil {
-  background-color: #fff;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
@@ -374,13 +478,20 @@ nav a {
   align-items: center;
   padding-top: 40px;
 }
+.contenedor-inicio-sesion .datos-inicio .form-inicio-sesion .contenedor-btnInicio-sesion .btnAdoptar {
+  margin-top: 15px;
+  background-color: yellow;
+  padding: 10px 15px;
+  color: black;
+  border: none;
+}
 .contenedor-inicio-sesion .datos-inicio .registrate {
   text-align: center;
   margin-top: 40px;
 }
 
 .contenedor-registro .datos-registro, .contenedor-contacto .datos, .contenedor .contenedor-mascotas .mascotas .perfil, .contenedor-inicio-sesion .datos-inicio {
-  background-color: #fff;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
@@ -416,7 +527,13 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 15px;
+}
+.contenedor-contacto .datos .col-12 .contenedor-btnEnviar .btnAdoptar {
+  background-color: yellow;
+  padding: 10px 15px;
+  color: black;
+  border: none;
 }
 
 .contenedor-informacion {
@@ -434,7 +551,7 @@ nav a {
 }
 
 .contenedor-registro .datos-registro, .contenedor .contenedor-mascotas .mascotas .perfil, .contenedor-inicio-sesion .datos-inicio, .contenedor-contacto .datos {
-  background-color: #fff;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
@@ -464,13 +581,19 @@ nav a {
   }
 }
 .contenedor-registro .datos-registro .form-registro {
-  width: 90%;
+  width: 80%;
 }
 .contenedor-registro .datos-registro .form-registro .contenedor-btnRegistro {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contenedor-registro .datos-registro .form-registro .contenedor-btnRegistro .btnAdoptar {
+  background-color: yellow;
+  padding: 10px 15px;
+  color: black;
+  border: none;
 }
 
 * {
@@ -479,16 +602,26 @@ nav a {
 }
 
 .body {
-  color: black;
-  background-color: #dfe6e9;
+  font-family: serif;
+  background-image: linear-gradient(to bottom right, #FFFF99 10%, #fff130 20%, #FFF44F 40%, #fffbae 60%, #FFFF99 80%);
+  background-size: 200% 200%;
+  animation: movimiento 10s linear infinite alternate;
 }
 
+@keyframes movimiento {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
 button {
   padding: 5px 10px;
 }
 
-button:hover {
-  cursor: pointer;
+.enlace {
+  color: rgb(255, 225, 0);
 }
 
 .contenedor {

@@ -9,16 +9,30 @@
 @import 'componentes/contacto';
 @import 'componentes/registrarse';
 
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .body{
-    
-    color: black;
-    background-color: #dfe6e9;
+    font-family: serif;
+    background-image: linear-gradient(to bottom right, #FFFF99 10%, #fff130 20%, #FFF44F 40%, #fffbae 60%, #FFFF99 80%);
 
+    background-size: 200% 200%;
+
+    animation: movimiento 10s linear infinite alternate;
+
+}
+
+@keyframes movimiento{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: 100% 100%;
+    }
 }
 
 
@@ -27,8 +41,8 @@ button{
     padding: 5px 10px;
 }
 
-button:hover{
-    cursor: pointer;
+.enlace{
+    color: rgb(255, 225, 0);
 }
 
 .contenedor{

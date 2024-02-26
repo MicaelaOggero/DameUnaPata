@@ -1,7 +1,7 @@
 .contenedor{
     .contenedor-footer{
         grid-area: footer;
-        background-color: #333;
+        background-color: black;
         color: #fff;
         text-align: center;
         font-family: 'Kanit', sans-serif;
@@ -45,6 +45,22 @@
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                    input{
+                        margin-right: 5px;
+                    }
+                    .btnAdoptar{
+                        
+                        background-color: map-get($map: $btn-general, $key: color);
+                        padding: map-get($map: $btn-general, $key: padding);
+                        color: map-get($map: $btn-general, $key: texto);
+                        border: map-get($map: $btn-general, $key: border);
+                    }
+                }
             }
         }
     }

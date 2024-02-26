@@ -2,7 +2,6 @@
     .contenedor-testimonios{
         grid-area: testimonios;
         display: flex;
-        margin: 10px 10px 10px 0;
 
         .testimonios{
 
@@ -16,6 +15,7 @@
             .titulo-testimonio{
                 font-size: 25px;
                 margin-bottom: 10px;
+                margin-top: 20px;
             }
 
             .contenedor-mensajes{
@@ -55,9 +55,11 @@
                 }
 
                 .destacado-testimonio {
-                    background: linear-gradient(to bottom, #9e9c9c, #d0d0d0); 
-                    background-color: #d0d0d088; 
-                    
+                    background: linear-gradient(to top, #ffee33, #fbff00); 
+                    background-color: #ffe100; 
+                    border: 1px solid yellow;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Desplazamiento X, desplazamiento Y, desenfoque, color */
+ 
                 }
             }
         }
@@ -65,9 +67,20 @@
     .margen-testimonio{
         margin-top: $margen-header;
     }
-    @media screen and (max-width: 880px) {
-        .m-r{
-            margin-left: 10px;
+    
+
+    .borde-esfumado-t{
+
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+        background-size: 100% 10px; /* Altura y ancho del borde superior */
+        background-position: top; /* Posición del gradiente en la parte superior */
+        background-repeat: no-repeat; /* Evita la repetición del gradiente */
+    
+        @media screen and (max-width: 880px){
+            // background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #95289b);
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 0), transparent);
+
+
         }
     }
 }
@@ -77,4 +90,8 @@
         margin-top: 0;
         margin-left: 10px;
     }
+
 }
+
+
+

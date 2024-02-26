@@ -1,14 +1,13 @@
 @import '../base/variables';
 @import '../base/extensiones';
 @import '../base/mapas';
+
 .contenedor{
     .contenedor-mascotas{
         grid-area: mascotas;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
-        padding: 5px;
 
         .titulo-mascotas{
             font-family: $fuente-subtitulos;
@@ -18,6 +17,7 @@
         .subtitulo-mascotas{
             font-size: 35px;
             text-align: center;
+            margin-top: 20px;
             
         }
         
@@ -59,9 +59,18 @@
                     background-color: map-get($map: $btn-general, $key: color);
                     padding: map-get($map: $btn-general, $key: padding);
                     color: map-get($map: $btn-general, $key: texto);
+                    border: map-get($map: $btn-general, $key: border);
                 }
             }
         }
+    }
+
+    .borde-esfumado-m{
+
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+        background-size: 100% 10px; /* Altura y ancho del borde superior */
+        background-position: top; /* Posición del gradiente en la parte superior */
+        background-repeat: no-repeat; /* Evita la repetición del gradiente */
     }
 
     .contenedor-mascotas-oficial{
