@@ -78,9 +78,14 @@ nav a {
   width: 700px;
 }
 .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
-  font-size: 60px;
+  font-size: 4em;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 10px;
+}
+@media screen and (max-width: 460px) {
+  .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
+    font-size: 45px;
+  }
 }
 @media screen and (max-width: 460px) {
   .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .parrafo {
@@ -104,12 +109,33 @@ nav a {
 }
 .contenedor .contenedor-mascotas .titulo-mascotas {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 60px;
+  font-size: 4em;
+  margin-top: 10px;
+}
+@media screen and (max-width: 460px) {
+  .contenedor .contenedor-mascotas .titulo-mascotas {
+    font-size: 45px;
+  }
 }
 .contenedor .contenedor-mascotas .subtitulo-mascotas {
   font-size: 35px;
   text-align: center;
-  margin-top: 20px;
+  margin: 0 5px;
+}
+@media screen and (max-width: 460px) {
+  .contenedor .contenedor-mascotas .subtitulo-mascotas {
+    font-size: 25px;
+  }
+}
+.contenedor .contenedor-mascotas .subtitulo-mascotas-i {
+  font-size: 35px;
+  text-align: center;
+  margin: 30px 5px 5px 5px;
+}
+@media screen and (max-width: 460px) {
+  .contenedor .contenedor-mascotas .subtitulo-mascotas-i {
+    font-size: 25px;
+  }
 }
 .contenedor .contenedor-mascotas .mascotas {
   width: 100%;
@@ -460,9 +486,10 @@ main .bg::after {
   max-width: 500px;
 }
 .contenedor-inicio-sesion .datos-inicio .row .titulo-inicio-sesion {
-  font-size: 60px;
+  font-size: 4em;
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 30px;
+  text-align: center;
 }
 @media screen and (max-width: 460px) {
   .contenedor-inicio-sesion .datos-inicio .row .titulo-inicio-sesion {
@@ -511,7 +538,7 @@ main .bg::after {
   width: 650px;
 }
 .contenedor-contacto .datos .titulo-contacto {
-  font-size: 60px;
+  font-size: 4em;
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 30px;
 }
@@ -571,7 +598,7 @@ main .bg::after {
   max-width: 700px;
 }
 .contenedor-registro .datos-registro .titulo-registro {
-  font-size: 60px;
+  font-size: 4em;
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 30px;
 }
@@ -581,7 +608,7 @@ main .bg::after {
   }
 }
 .contenedor-registro .datos-registro .form-registro {
-  width: 80%;
+  width: 90%;
 }
 .contenedor-registro .datos-registro .form-registro .contenedor-btnRegistro {
   padding-top: 10px;

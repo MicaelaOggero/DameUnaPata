@@ -12,12 +12,33 @@
         .titulo-mascotas{
             font-family: $fuente-subtitulos;
             font-size: $tamano-subtitulos;
+            margin-top: 10px;
+
+            @media screen and (max-width: 460px) {
+                font-size: $tamano-subtitulos-mobile;
+            }
         }
 
         .subtitulo-mascotas{
             font-size: 35px;
             text-align: center;
-            margin-top: 20px;
+            margin: 0 5px;
+
+            @media screen and (max-width: 460px) {
+                font-size: $tamano-fuente-mobile;
+                
+            }
+        }
+
+        .subtitulo-mascotas-i{
+            font-size: 35px;
+            text-align: center;
+            margin: 30px 5px 5px 5px;
+
+            @media screen and (max-width: 460px) {
+                font-size: $tamano-fuente-mobile;
+                
+            }
             
         }
         
