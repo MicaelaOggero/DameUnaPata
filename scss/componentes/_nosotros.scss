@@ -100,7 +100,7 @@ main
 
     .bg{
         &::after {
-            background: linear-gradient(rgba(121, 118, 118, 0.5), rgba(255, 252, 252, 0.508)), url("../../imagenes/fondo-huellitas.jpg");
+            background: linear-gradient(rgba(121, 118, 118, 0.5), rgba(255, 252, 252, 0.508)), url("../imagenes/fondo-huellas.jpg");
             background-size: cover;
         }
     }
