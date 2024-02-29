@@ -15,6 +15,7 @@
     <!--Estilos-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Dame Una Pata</title>
 </head>
 <body class="body">
@@ -24,11 +25,11 @@
             <div class="container-fluid">
                 <div class="header">
                     <div class="contenedor-titulo">
-                        <img class="logo" src="../imagenes/logo.jpeg" alt="Logo de dame una pata ">
+                        <img class="logo" src="../imagenes/logo-sinfondo.jpg" alt="Logo de dame una pata ">
                         <div class="titulo">Dame Una Pata</div>
                     </div>
                     <nav class="menu">
-                        <a href="iniciar-sesion.html">Iniciar sesión</a>
+                        <a class="inicio-sesion" href="iniciar-sesion.html">Iniciar sesión</a>
                         <button class="navbar-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span class="navbar-icon"></span>
                         </button>
@@ -51,6 +52,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contacto.html">Contacto</a>
                                     </li>
+                                    <li class="nav-item desaparece">
+                                        <a class="nav-link" href="iniciar-sesion.html">Iniciar sesión</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -64,18 +68,18 @@
             ">Mascotas</h1>
             <h3 class="subtitulo-mascotas">Ellos están en busca de un hogar</h3>
             <div class="mascotas">
-                <div class="perfil">
+                <div class="card perfil">
+                    <div class="card-header titulo-nombre-mascota">
+                      Max
+                    </div>
                     <div id="carouselExample1" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../imagenes/perrito1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
+                                <img src="../imagenes/mascota-1/foto-1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
                             </div>
                             <div class="carousel-item">
-                                <img src="../imagenes/perrito2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
-                        </div>
-                        <div class="carousel-item">
-                                <img src="../imagenes/perrito3.jpg" class="d-block imgMascotas" alt="imagen 3 mascota">
-                        </div>
+                                <img src="../imagenes/mascota-1/foto-2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,22 +90,23 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <h3 class="nombre">Nombre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti voluptate illo incidunt assumenda nobis, quidem ratione. Perspiciatis explicabo illum, doloribus fuga ratione officiis commodi labore!</p>
-                    <button class="btnAdoptar btn">Adoptar</button>
+                    <div class="card-body">
+                      <h5 class="card-title nombre">Fiel compañero en busca de un hogar amoroso</h5>
+                      <a href="#" class="btn btnAdoptar">Adoptar</a>
+                    </div>
                 </div>
-                <div class="perfil">
+                <div class="card perfil">
+                    <div class="card-header titulo-nombre-mascota">
+                      Luna
+                    </div>
                     <div id="carouselExample2" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../imagenes/perrito1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
+                                <img src="../imagenes/mascota-2/foto-1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
                             </div>
                             <div class="carousel-item">
-                                <img src="../imagenes/perrito2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
-                        </div>
-                        <div class="carousel-item">
-                                <img src="../imagenes/perrito3.jpg" class="d-block imgMascotas" alt="imagen 3 mascota">
-                        </div>
+                                <img src="../imagenes/mascota-2/foto-2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -112,36 +117,38 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <h3 class="nombre">Nombre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipfacilis autem mollitia nihil isicing elit. Non corrupti voluptate illo incidunt assumenda nobis, quidem facilis autem mollitia nihil ratione. Perspiciatis explicabo illum, doloribus fuga ratione officiis commodi labore!</p>
-                    <button class="btnAdoptar btn">Adoptar</button>
-                </div>           
-                <div class="perfil">
-                    <div id="carouselExample3" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../imagenes/perrito1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imagenes/perrito2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                    <div class="card-body">
+                      <h5 class="card-title nombre">Gatita juguetona en busca de una familia cariñosa</h5>
+                      <a href="#" class="btn btnAdoptar">Adoptar</a>
                     </div>
-                    <div class="carousel-item">
-                            <img src="../imagenes/perrito3.jpg" class="d-block imgMascotas" alt="imagen 3 mascota">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    </div>
-                    <h3 class="nombre">Nombre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti voluptate illo incidunt assumenda nobis, quidem facilis autem mollitia nihil ratione. Perspiciatis explicabo illum, doloribus fuga ratione officiis commodi labore!</p>
-                    <button class="btnAdoptar btn btn-primary">Adoptar</button>
                 </div>
+                <div class="card perfil">
+                    <div class="card-header titulo-nombre-mascota">
+                      Rocky
+                    </div>
+                    <div id="carouselExample3" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/mascota-3/foto-1.jpg" class="d-block imgMascotas" alt="imagen 1 mascota">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/mascota-3/foto-2.jpg" class="d-block imgMascotas" alt="imagen 2 mascota">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title nombre">Amigo peludo en busca de un nuevo comienzo</h5>
+                      <a href="#" class="btn btnAdoptar">Adoptar</a>
+                    </div>
+                </div>         
             </div>
         </section>
         <!--------Testimonios--------->
@@ -150,22 +157,22 @@
                 <h2 class="titulo-testimonio">¿Qué dice la comunidad?</h2>
                 <div class="contenedor-mensajes">
                     <div class="mensaje destacado-testimonio">
-                        <img class="foto" src="../imagenes/usuario1.png" alt="Foto 1">
                         <div class="submensaje">
-                            <div class="nombre-testimonio"><label>Nombre</label></div>
-                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sed. 
-                            </p>
+                            <img class="foto" src="../imagenes/usuario1.png" alt="Foto 1">
+                            <div class="nombre-testimonio"><label>Yamila</label></div>
                         </div>
+                        <p class="texto">"Adopté a Mora y ahora mi hogar está lleno de amor. Gracias por hacerlo posible."
+                        </p>
                     </div>
                     <div class="mensaje destacado-testimonio">
-                        <img class="foto" src="../imagenes/usuario2.png" alt="Foto 1">
                         <div class="submensaje">
-                            <div class="nombre-testimonio"><label>Nombre</label></div>
-                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sed. 
-                            </p>
+                            <img class="foto" src="../imagenes/usuario2.png" alt="Foto 1">
+                            <div class="nombre-testimonio"><label>Maximiliano</label></div>
                         </div>
+                        <p class="texto">"Encontré a mi mejor amigo en esta web. Adopté a Roco y mi vida cambió para mejor. ¡Gracias!"
+                        </p>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>
         <!------- Secciones------>
@@ -222,6 +229,9 @@
                 </div>
             </div>
         </footer>
+        <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
     </div>
 </body>
 

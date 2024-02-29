@@ -4,8 +4,18 @@
     .contenedor-bienvenida{
 
         grid-area: bienvenida;
-        margin-top: 115px;
+        margin-top: 110px;
+
+        @media screen and (max-width: 880px) {
+            margin-top: 12vw;
+            
+        }
         
+        @media screen and (max-width: 460px) {
+            margin-top: 60px;
+            
+        }
+
         .carousel{
             .carousel-inner{
                 .carousel-item{

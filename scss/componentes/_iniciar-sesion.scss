@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: 880px) {
+        margin: $margen-header-mobile 10px 10px 10px;
+    }
+
     .datos-inicio{
         display: flex;
         flex-direction: column;
