@@ -184,7 +184,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 !important;
+  margin: 0 5px;
+  padding: 10px 0 !important;
 }
 .contenedor .contenedor-mascotas .mascotas .perfil .titulo-nombre-mascota {
   width: 100%;
