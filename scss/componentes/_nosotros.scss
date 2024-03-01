@@ -60,9 +60,11 @@ main
                     li{
                         img{
                             width: 50vw;
+                            height: 30vw;
 
                             @media screen and (max-width: 460px){
                                 width: 100vw;    
+                                height: 40vh;
                             }
                         }
                     }

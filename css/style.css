@@ -27,6 +27,7 @@
   margin-left: 10px;
   font-family: "Josefin Sans", sans-serif;
   color: white;
+  text-decoration: none;
 }
 @media screen and (max-width: 880px) {
   .header .contenedor-titulo .titulo {
@@ -38,6 +39,14 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+.header .menu .inicio-sesion {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  text-align: end;
 }
 @media screen and (max-width: 880px) {
   .header .menu .inicio-sesion {
@@ -63,15 +72,6 @@
   .header .menu .offcanvas .offcanvas-body .navbar-nav .desaparece {
     display: none;
   }
-}
-
-nav a {
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-  font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  text-align: end;
 }
 
 .contenedor .contenedor-bienvenida {
@@ -100,22 +100,31 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 20px 0;
-  width: 700px;
+  padding: 20px 10px;
+  width: 70vw;
+}
+@media screen and (max-width: 880px) {
+  .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida {
+    width: 100vw;
+  }
 }
 .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
   font-size: 4em;
   font-family: "Josefin Sans", sans-serif;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 @media screen and (max-width: 460px) {
   .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
-@media screen and (max-width: 460px) {
+.contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .parrafo {
+  width: 100%;
+  font-size: 2vw;
+}
+@media screen and (max-width: 880px) {
   .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .parrafo {
-    display: none;
+    font-size: 3vw;
   }
 }
 
@@ -392,6 +401,7 @@ nav a {
   color: #fff;
   font-family: "Kanit", sans-serif;
   padding: 0;
+  text-decoration: none;
 }
 .contenedor .contenedor-footer .footer .subcripcion {
   display: flex;
@@ -479,10 +489,12 @@ main .seccion-nosotros .conteiner-nosotros .slide ul {
 }
 main .seccion-nosotros .conteiner-nosotros .slide ul li img {
   width: 50vw;
+  height: 30vw;
 }
 @media screen and (max-width: 460px) {
   main .seccion-nosotros .conteiner-nosotros .slide ul li img {
     width: 100vw;
+    height: 40vh;
   }
 }
 main .seccion-nosotros .titulo-nosotros {

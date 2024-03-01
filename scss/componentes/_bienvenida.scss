@@ -34,22 +34,30 @@
                         left: 50%;
                         transform: translate(-50%,-50%);
                         text-align: center;
-                        padding: 20px 0;
-                        width: 700px;
+                        padding: 20px 10px;
+                        width: 70vw;
+                        
+
+                        @media screen and (max-width: 880px) {
+                            width: 100vw;
+                        }
 
                         .titulo-bienvenida{
                             font-size: $tamano-subtitulos;
                             font-family: $fuente-subtitulos;
-                            margin-top: 10px;
+                            margin-top: 5px;
 
                             @media screen and (max-width: 460px) {
-                                font-size: $tamano-subtitulos-mobile;
+                                font-size: 35px;
                             }
                         }
 
                         .parrafo{
-                            @media screen and (max-width: 460px) {
-                                display: none;
+                            width: 100%;
+                            font-size: 2vw;
+
+                            @media screen and (max-width: 880px) {
+                                font-size: 3vw;
                             }
                         }
                     }
