@@ -9,6 +9,11 @@
   padding: 5px 0 0 0 !important;
   background-color: black;
 }
+@media screen and (max-width: 880px) {
+  .header {
+    padding: 5px 0 !important;
+  }
+}
 .header .contenedor-titulo {
   display: flex;
   align-items: end;
