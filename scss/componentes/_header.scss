@@ -22,8 +22,7 @@
             width: 140px;
             
             @media screen and (max-width: 880px) {
-                width: 15vw;
-                min-width: 80px;
+                display: none;
             }
         }
 
@@ -34,9 +33,10 @@
             color: white;
             text-decoration: none;
 
-            @media screen and (max-width: 880px) {
-                font-size: 6.5vw;
-                margin-right: 5px;
+            @media screen and (max-width: 460px) {
+               
+                font-size: 35px;
+                margin: 0;
             }
         }
     }

@@ -35,20 +35,16 @@
                         transform: translate(-50%,-50%);
                         text-align: center;
                         padding: 20px 10px;
-                        width: 70vw;
-                        
-
-                        @media screen and (max-width: 880px) {
-                            width: 100vw;
-                        }
-
+                        width: 100vw;
+                        margin: 5px;
+           
                         .titulo-bienvenida{
                             font-size: $tamano-subtitulos;
                             font-family: $fuente-subtitulos;
                             margin-top: 5px;
 
-                            @media screen and (max-width: 460px) {
-                                font-size: 35px;
+                            @media screen and (max-width: 880px) {
+                                font-size: 45px;
                             }
                         }
 

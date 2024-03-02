@@ -18,8 +18,7 @@
 }
 @media screen and (max-width: 880px) {
   .header .contenedor-titulo .logo {
-    width: 15vw;
-    min-width: 80px;
+    display: none;
   }
 }
 .header .contenedor-titulo .titulo {
@@ -29,10 +28,10 @@
   color: white;
   text-decoration: none;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 460px) {
   .header .contenedor-titulo .titulo {
-    font-size: 6.5vw;
-    margin-right: 5px;
+    font-size: 35px;
+    margin: 0;
   }
 }
 .header .menu {
@@ -101,21 +100,17 @@
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px 10px;
-  width: 70vw;
-}
-@media screen and (max-width: 880px) {
-  .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida {
-    width: 100vw;
-  }
+  width: 100vw;
+  margin: 5px;
 }
 .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
   font-size: 4em;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 5px;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 880px) {
   .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .titulo-bienvenida {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 .contenedor .contenedor-bienvenida .carousel .carousel-inner .carousel-item .subcontenedor-bienvenida .parrafo {
