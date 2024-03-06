@@ -93,12 +93,8 @@ button{
     'mascotas mascotas testimonios'
     'secciones secciones secciones'
     'footer footer footer';
-    
-}
 
-@media screen and (max-width: 880px) {
-
-    .contenedor{
+    @media screen and (max-width: 880px) {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, auto);
         grid-template-areas: 
@@ -109,8 +105,8 @@ button{
         'secciones'
         'footer'
         ;
-    }
 
+    }
 }
 
 .margen{
